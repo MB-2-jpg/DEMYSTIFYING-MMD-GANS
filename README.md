@@ -8,6 +8,7 @@ For implementation :
 1. Start with applying an (exiplicit) kernel direct : we can start with small datasets in 2d. And test the same algorithm on bigger directly.
 
 2. Move to a learned kernel with the form k(h(.),h(.)). Either use a fixed kernel or a train h.
+
 3.Highlight stability of the learning of the kernel, Evaluate convergence.
 
 # Timeline
