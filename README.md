@@ -14,4 +14,8 @@ For implementation :
 
 # Timeline
 10/05/2026: (Mohamed) Lecture du papier principal "Demystifying MMD GANs" (sauf la section "Gradient bias") .
-11/05/2026: (Nous tous) Réunion avec le prof.
+11/05/2026: (Nous tous) Réunion1 avec le prof.
+17/05/2026: Relecture du papier , Complémentation du TP Lab1 dédiée à l'entrainement de GAN , WGAN sur des données 2D synthétiques.
+
+19/05/2026: Implémentation de l'entrainement des MMD GAN sur les données 2D synthétiques.
+20/05/2026: Réunion 2 avec le prof.
