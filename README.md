@@ -15,7 +15,12 @@ For implementation :
 
 
 **Meeting 2**:
-1.Highlight the effect of tuning parameters on the MMD Learning : effect on the descriminator decision boundary, learning stability..
+
+
+1.Highlight the effect of tuning parameters on the MMD Learning : effect on the descriminator decision boundary, learning stability.
+
+
+
 # Timeline
 **10/05/2026**: (Mohamed) Lecture du papier principal "Demystifying MMD GANs" (sauf la section "Gradient bias") .
 **11/05/2026**: (Nous tous) Réunion1 avec le prof.
