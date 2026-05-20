@@ -26,7 +26,7 @@ For implementation :
 **11/05/2026**: (Nous tous) Réunion1 avec le prof.
 
 
-**17/05/2026**: Relecture du papier , Complémenter le TP Lab1 dédiée à l'entrainement de GAN , WGAN sur des données 2D synthétiques.
+**17/05/2026**: Relecture du papier , Compléter le TP Lab1 dédiée à l'entrainement de GAN , WGAN sur des données 2D synthétiques.
 
 **19/05/2026**: Implémentation de l'entrainement des MMD GAN sur les données 2D synthétiques.
 
