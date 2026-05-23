@@ -1,6 +1,6 @@
 # DEMYSTIFYING-MMD-GANS
 The goal of the project is to  implement and analyse the performance , limits of a method of improving the stability of the GAN's training:  Using an MMD as a critic.
-# Quelques notes
+# Remarks from meeting sessions
 **Meeting 1**
 
 the goal of training MMD GANS is to minimise the loss MMD, 
