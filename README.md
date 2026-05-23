@@ -5,6 +5,9 @@ The goal of the project is to  implement and analyse the performance , limits of
 
 the goal of training MMD GANS is to minimise the loss MMD, 
 For implementation :
+
+
+
 1. Start with applying an (exiplicit) kernel direct : we can start with small datasets in 2d. And test the same algorithm on bigger directly.
 
 
