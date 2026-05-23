@@ -32,3 +32,21 @@ For implementation :
 
 
 **20/05/2026**: Réunion 2 avec le prof.
+
+# Macro-Planning
+**Week 3**
+Correcting errors mentioned in the previous meeting 
+
+Analysis of the role of hyperparameters, choice of the kernel used.
+
+
+ If we succeed to achieve stability on toy examples , MNIST , CIFAR , We move to larger datasets (More natural images)
+
+**Week 4**
+Quantitative analysis of performance , limits of the metrics used.
+
+**Week 5**
+
+**Week 6**
+
+
