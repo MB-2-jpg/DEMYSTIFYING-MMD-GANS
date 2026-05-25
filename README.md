@@ -38,7 +38,7 @@ For implementation :
 
 **20/05/2026**: Réunion 2 avec le prof.
 
-**25/05/2026**: Correction de la partie du code du descriminateur dans l'entrainement du MMd, Expérimentation de l'entrainement en utilisant le noyau rbf sur des ddonnées syntthétiques 2d en utilisant différenttes valeurs de sigma , rédaction de quelques remarques liés au choix de sigma , l'infuluence dee la nature de la distribution sur l'entrainement du réseau génératif.
+**25/05/2026**: Correction de la partie du code du descriminateur dans l'entrainement du MMd, Expérimentation de l'entrainement en utilisant le noyau rbf/quadraatic rational kernel  sur des données syntthétiques 2d en utilisant différenttes valeurs de $\sigma / \alpha$ , rédaction de quelques remarques liés au choix de sigma , l'infuluence dee la nature de la distribution sur l'entrainement du réseau génératif.
 # Macro-Planning
 **Week 3**
 Correcting errors mentioned in the previous meeting 
