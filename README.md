@@ -43,7 +43,14 @@ For implementation :
 **30/05/2026** Une déscription théorique de l'effet de la bande passante du noyau choisie , de la nature de la distribution originale sur l'apprentissage u générateur. Cette déscription étaitinspirée des résultats des expériences sur les données synthétiques 2d  .Le théorème de Bernier autour du transport optimal a permis d'éclaircir la remarque à propos de la tendance du réseau à apprendre une distribution de support  "plus convexe" que la distribution originale qui est une simple somme de diracles.
 
 
-**31/05/2026** Tentative d'entrainement d'un MMD GAN sur la base d'images CIFAR (170 M , grande variabilité sémantique comparée à MNIST par exemple) . Pour le moment , je n'ai pas réussit à générer des images plausibles sémantiquement (images générées plus proche de bruit que d'images réelles)
+**31/05/2026** Tentative d'entrainement d'un MMD GAN sur la base d'images CIFAR (170 M , grande variabilité sémantique comparée à MNIST par exemple) . Pour le moment , je n'ai pas réussit à générer des images plausibles sémantiquement (images générées plus proche de bruit que d'images réelles).
+Architecture:
+Générateur (transforme un bruit blanc de dimension $z_n$ vers une image à 3 canaux) constituée de convolution transposée ($z_n$ inférieure à la dimension des images)
+
+Calcul de MMD dans un espace latent( dimension $d$) en utilisant un encodeur (initialisé avec les poids de resnet mais qui se met à jour lors de l'entrainement pour maximiser MMD dans l'espace latent entre les images réelles et celles générées par le générateur.
+
+Le choix de $z_n$ (bruit blanc de départ) semble etre lié à la variabilité de la distribution qu'on vent apprendre."L'énergie du bruit blanc" doit etre de plus en plus grande pour apprendre une distribution de plus en plus variable. 
+Les autres choix des learning rates , dimension de l'espace latent étaient choisis en essayant quelques valeurs (sans garantis théoriques mais en s'inspirant des implémentations décrites dans les papiers existants)
 
 
 # Macro-Planning
