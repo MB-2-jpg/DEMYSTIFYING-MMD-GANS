@@ -53,6 +53,9 @@ Le choix de $z_n$ (bruit blanc de départ) semble etre lié à la variabilité d
 Les autres choix des learning rates , dimension de l'espace latent étaient choisis en essayant quelques valeurs (sans garantis théoriques mais en s'inspirant des implémentations décrites dans les papiers existants)
 
 
+**01/06/2026** 
+Updating the bandwith analysis with a quantitative result in the case of a kernel of the form $k(x,y)= f(||x-y||^2)$.
+Adding an example of current generator's images trained on CIFAR.
 # Macro-Planning
 **Week 3**
 Correcting errors mentioned in the previous meeting 
