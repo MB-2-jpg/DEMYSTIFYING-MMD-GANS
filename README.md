@@ -45,11 +45,11 @@ For implementation :
 
 **31/05/2026** Tentative d'entrainement d'un MMD GAN sur la base d'images CIFAR (170 M , grande variabilité sémantique comparée à MNIST par exemple) . Pour le moment , je n'ai pas réussit à générer des images plausibles sémantiquement (images générées plus proche de bruit que d'images réelles).
 Architecture:
-Générateur (transforme un bruit blanc de dimension $z_n$ vers une image à 3 canaux) constituée de convolution transposée ($z_n$ inférieure à la dimension des images)
+Générateur (transforme un bruit blanc de dimension $n_z$ vers une image à 3 canaux) constituée de convolution transposée ($z_n$ inférieure à la dimension des images)
 
 Calcul de MMD dans un espace latent( dimension $d$) en utilisant un encodeur (initialisé avec les poids de resnet mais qui se met à jour lors de l'entrainement pour maximiser MMD dans l'espace latent entre les images réelles et celles générées par le générateur.
 
-Le choix de $z_n$ (bruit blanc de départ) semble etre lié à la variabilité de la distribution qu'on vent apprendre."L'énergie du bruit blanc" doit etre de plus en plus grande pour apprendre une distribution de plus en plus variable. 
+Le choix de $n_z$ (dimension du bruit blanc de départ) semble etre lié à la variabilité de la distribution qu'on vent apprendre."L'énergie du bruit blanc" doit etre de plus en plus grande pour apprendre une distribution de plus en plus variable. 
 Les autres choix des learning rates , dimension de l'espace latent étaient choisis en essayant quelques valeurs (sans garantis théoriques mais en s'inspirant des implémentations décrites dans les papiers existants)
 
 
