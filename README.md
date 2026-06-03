@@ -53,9 +53,42 @@ Le choix de $n_z$ (dimension du bruit blanc de départ) semble etre lié à la v
 Les autres choix des learning rates , dimension de l'espace latent étaient choisis en essayant quelques valeurs (sans garantis théoriques mais en s'inspirant des implémentations décrites dans les papiers existants)
 
 
+**28/05/2026** — Mahdi
+- Diagnosed the post-17k training degradation.
+- Identified that disabling the activation regularization term (`λ_act = 0`) left critic features unbounded, causing kernel saturation.
+
+**29/05/2026** — Mahdi
+- Introduced a scale-targeted activation penalty (`τ = 1`).
+- Added a one-sided gradient penalty.
+- Implemented learning-rate decay.
+- Added best-model checkpointing based on KID score.
+
+**30/05/2026** — Mahdi
+- Evaluated the previous modifications.
+- Observed that the fix was unsuccessful:
+  - KID remained stuck at approximately `3.0`.
+  - Generated samples collapsed to nearly black images.
+
+**31/05/2026** — Mahdi
+- Replaced the critic with an autoencoder-based critic.
+- Added reconstruction loss (`λ_AE = 8`).
+- Replaced previous regularization penalties with spectral normalization.
+- Optimized the unbiased MMD objective (`MMD²_u`).
+- Set the critic update ratio to `n_critic = 5`.
+
+**01/06/2026** — Mahdi
+- Replaced the fixed kernel bandwidth with the median-distance heuristic.
+- Set the base bandwidth as `σ₀² = median(||x − y||²)`.
+- Applied the heuristic to the kernel function `k(x, y) = f(||x − y||²)`.
+
 **01/06/2026** 
 Updating the bandwith analysis with a quantitative result in the case of a kernel of the form $k(x,y)= f(||x-y||^2)$.
 Adding an example of current generator's images trained on CIFAR.
+
+**02/06/2026**
+We held a meeting to coordinate and align on what each member of the group has accomplished so far.
+
+
 # Macro-Planning
 **Week 3**
 Correcting errors mentioned in the previous meeting 
