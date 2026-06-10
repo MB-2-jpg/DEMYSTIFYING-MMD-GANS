@@ -76,6 +76,11 @@ Les autres choix des learning rates , dimension de l'espace latent étaient choi
 - Optimized the unbiased MMD objective (`MMD²_u`).
 - Set the critic update ratio to `n_critic = 5`.
 
+
+**31/05/2026**
+[Training an MMD GAN on CIFAR10 ]: Using a "frozen" Resnet network in the critic : Some textures are generated , but the learning process converges early to a sub-optimal solution: The generator succeeded to minimize MMD , but the MMD itself (computed on the fixed features)  wasn't meaningfull.
+
+
 **01/06/2026** — Mahdi
 - Replaced the fixed kernel bandwidth with the median-distance heuristic.
 - Set the base bandwidth as `σ₀² = median(||x − y||²)`.
@@ -88,7 +93,8 @@ Adding an example of current generator's images trained on CIFAR.
 **02/06/2026**
 We held a meeting to coordinate and align on what each member of the group has accomplished so far.
 
-
+**03/06/2026**
+Using the same strategy used on Mnist : using an autoencoder with an autoencoder loss. I used  256 dimension for the latent space where i computed the MMD . The learning process was blocked in an early non-optimal phase.
 # Macro-Planning
 **Week 3**
 Correcting errors mentioned in the previous meeting 
